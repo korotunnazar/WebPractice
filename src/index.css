@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+
+    background: lightgray;
+
+    form {
+        width: 200px;
+
+        div {
+            position: relative;
+            margin: 15px auto;
+            width: 100%;
+            background-color: white;
+            input[type="text"], input[type="email"], input[type="tel"], textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            legend {
+                margin: 5px 0;
+            }
+        }
+
+    }
+
+    .card {
+        width: 400px;
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid black;
+    }
+
+    .lect-card {
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: var(--bg-color, #f0f0f0);
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .lect-card[data-bg-color] {
+        background-color: attr(data-bg-color color);
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+
+        > * {
+            padding-left: 10px;
+        }
+
+        legend {
+            padding-top: 10px;
+        }
+    }
+
+
+    .map {
+        height: 200px;
+        background-color: #ccc;
+        text-align: center;
+        line-height: 200px;
+        color: #444;
+        font-style: italic;
+    }
+
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 16px;
+        }
+    }
+}
